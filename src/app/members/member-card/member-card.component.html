@@ -1,0 +1,49 @@
+
+<div class="contain">
+
+    <div class="__card  mt-5 me-3" routerLink="members/{{user().id}}">
+    
+    
+      <div class="card__border">
+    
+        <div class="card__fill">
+          <img src="{{user().avatar}}" alt="{{user().first_name}}">
+        </div>
+      </div>
+      <h5 class="card__name mt-4">{{user().first_name}} {{user().last_name}}</h5>
+       <div class="info">
+        <div class="info__icon">
+          <i class="fa fa-circle-info "></i>
+        </div>
+  
+        <div class="info__border">
+          <div class="info__fill">
+            <img src="{{user().avatar}}" alt="{{user().first_name}}" class="info__img">
+          </div>
+  
+        </div>
+  
+        <div class="info__data">
+          <span style="color: black;">Email: {{user().email}}</span>
+        
+        </div>
+  
+        <div class="info__social ">
+            <a  class="info__social-link me-2">
+              <i class="fa fa-user "  style="color: rgba(3, 123, 123, 0.6);"></i>
+  
+            </a>
+            <a  class="info__social-link me-2">
+              <i class="fa fa-heart " style="color: rgb(240, 1, 1);"></i>
+  
+            </a>
+            <a  class="info__social-link ">
+              <i class="fa fa-envelope " style="color: rgb(182, 51, 3);"></i>
+  
+            </a>
+        </div>
+       </div>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,23 @@
+<div class="main d-flex">
+    <div class="main-dialog col-6 h-100 d-flex  flex-column align-items-center justify-content-center " >
+        
+
+        <h1>Welcome to Your</h1><span class="dashword"> Dashboard</span>
+        <h6> try contact as more people as u can</h6>
+        <button class="btn goto" [routerLink]="['/']" fragment="memebrs"> Go to members?</button>
+    </div>
+    <div class="main-heroimg col-6 h-100"  >
+        <app-home-main></app-home-main>
+    </div>
+    
+
+</div>
+<section class="users align-content-center">
+
+     <div class="arrow">
+        <app-arrow></app-arrow>
+     </div>
+    <app-member-list id="memebrs"></app-member-list>
+
+
+</section>

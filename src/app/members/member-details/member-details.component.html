@@ -1,0 +1,66 @@
+@if (member) {
+
+
+    <div class="container details row">
+        <div class="col-4">
+
+            <div class="card">
+                <div class="card-img-top">
+                    <img 
+                        src="{{member.avatar}}" 
+                        alt="{{member.first_name}}"
+                        width="100%"
+                        style="border-radius: 5%;"
+                    
+                    
+                    
+                    >
+                </div>
+
+                <div class="card-body">
+                    <div>
+                        <strong>
+                            Name:
+                        </strong>
+                        <p>{{member.first_name}} , {{member.last_name}}</p>
+                    </div>
+                    <div>
+                        <strong>
+                            Email:
+                        </strong>
+                        <p>{{member.email}} </p>
+                    </div>
+                </div>
+                <div class="card-footer ">
+
+                    <a  class="info__social-link me-4">
+                        <i class="fa fa-heart " style="color: rgb(240, 1, 1);"></i>
+            
+                      </a>
+                      <a  class="info__social-link ">
+                        <i class="fa fa-envelope " style="color: rgb(182, 51, 3);"></i>
+            
+                      </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-8">
+
+            <tabset class="member-tabset">
+                <tab heading="About {{member.first_name}}" class="p-3">
+                    <h4>Intro</h4>
+                    <p style="color: #8e8e8e;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quae dolore eveniet voluptate sit quis dignissimos maxime laboriosam? Dolore fugit doloremque voluptatem quaerat nostrum aliquam enim maxime accusantium dolorum vel?</p>
+                </tab>
+                <tab heading="interests"  class="p-3">
+                    <h4>interests</h4>
+                    <p style="color: #8e8e8e;">anything</p>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+    
+
+
+}

@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'CustomFont';
+    src: url("./assets/fonts/Aboreto.ttf") format('truetype');
+}
+
+body {
+    font-family: 'CustomFont', Arial, sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #EB5E28; /* Bright Red */
+    --secondary-color: #252422; /* Light Pink */
+    --light-text-color: #666666; /* Light Grey */
+    --gradient-color:linear-gradient(5deg, #EB5E28, #252422);
+}
+
+
+.tab-panel {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
+    border-bottom: 4px solid #EB5E28; /* Primary color */
+  }
+  
+  .nav-tabs > li > a {
+    background-color: transparent;
+    font-weight: 500;
+    color: #383838 !important;
+    font-weight: bold;
+  }
+  
+  .nav-tabs {
+    border: none;
+  }
+  
+  .nav-tabs > li.active > a.active {
+    background-color: transparent;
+    color: #EB5E28 !important; /* Primary color */
+  }
+  
+  .member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
+    border: 0;
+    background: transparent !important;
+    color: #333333;
+  }
+  
+  .member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
+    color: #a6a6a6;
+  }
+  
+  .member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
+    margin-top: 0px;
+  }
+  
+  .member-tabset > .nav-tabs > li.active {
+    border-bottom: 4px solid #252422; /* Secondary color */
+    position: relative;
+  }
+  
+  .member-tabset > .nav-tabs > li.active > a {
+    border: 0 !important;
+    color: #333333;
+  }
+  
+  .member-tabset > .nav-tabs > li.active > a > i {
+    color: #404040;
+  }
+  
